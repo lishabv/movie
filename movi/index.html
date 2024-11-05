@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="House_of_the_dragon_logo.png" alt="" width="50%">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#trivia">Trivia Quiz</a></li>
+                <li><a href="#quotes">Quote of the Day</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="para">
+    <p>Game of Thrones is a groundbreaking fantasy television series adapted from George R.R. Martin’s A Song of Ice and Fire novels. It aired on HBO from 2011 to 2019 and was created by David Benioff and D.B. Weiss. The story is set in the continents of Westeros and Essos, where noble families battle for control of the Iron Throne and ultimate power over the Seven Kingdoms.
+
+      Known for its complex characters, political intrigue, unpredictable plot twists, and high-stakes battles, the series became a cultural phenomenon. Its large ensemble cast, including characters like Jon Snow, Daenerys Targaryen, and Tyrion Lannister, added depth to the epic tale of loyalty, betrayal, and ambition. While the series received widespread acclaim, its final season was divisive among fans.</p>
+    </div>
+
+    <section id="home">
+        <h2>GAME OF THRONES</h2>
+
+        <div class="movie-posters">
+            <img src="p1.jpg" alt="Movie Poster 1" class="poster">
+            
+            <img src="p2.jpg" alt="Movie Poster 3" class="poster">
+            <img src="p3.jpg" alt="movie poster 4" class="poster">
+            <img src="p4.jpg" alt="movie poster 4" class="poster">
+            <img src="p5.jpg" alt="movie poster 4" class="poster">
+           
+           
+
+        </div>
+    </section>
+
+    <section id="characters">
+        <h2>Character Bios</h2>
+        <div class="image-container">
+            <div class="image-box">
+              <img src="Rheanyra.jpg" alt="iron man" >
+              <div class="overlay">
+                <div class="text">Rheanyra Targaryan</div>
+              </div>
+            </div>
+        
+            <div class="image-box">
+              <img src="daemon.jpg" alt="THOR">
+              <div class="overlay">
+                <div class="text">Daemon Targaryan</div>
+              </div>
+            </div>
+        
+            <div class="image-box">
+              <img src="aemond.jpg" alt="BLACK PANTHER">
+              <div class="overlay">
+                <div class="text">Aemond Targaryan</div>
+              </div>
+            </div>
+            <div class="image-box">
+                <img src="aegon.jpg" alt="CAP">
+                <div class="overlay">
+                  <div class="text">Aegon Targaryan</div>
+                </div>
+              </div>
+              
+    </section>
+
+    <section id="trailers">
+
+        <h2>Movie Trailers</h2>
+        <iframe src="https://www.youtube.com/embed/DotnJ7tTA34" frameborder="0" allowfullscreen width="50%" height="500px"></iframe>
+        <!-- Add more trailers as needed -->
+    </section>
+
+    <section id="quotes">
+        <h2>Quote of the Day</h2>
+        <p id="quote" ></p>
+    </section>
+
+    <section id="trivia">
+        <h2>Trivia Quiz</h2>
+<button onclick="startQuiz()" class="cssbuttons-io-button">
+  Start Quiz
+  <div class="icon">
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+     
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+</button>
+
+        <div id="quiz-container" style="display:none;">
+            <p id="question"></p>
+            <button onclick="checkAnswer(true)" class="button">True</button>
+            <button onclick="checkAnswer(false)" class="button">False</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;  </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
